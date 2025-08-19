@@ -333,7 +333,8 @@ auc(dev_roc_m)
 par(pty="s")
 plot.roc(dev_roc_m, main = "ROC: spd1 + spdl1: kliniskai reiksmingi vs ne", print.auc=TRUE, print.thres=TRUE) 
 dev_roc_m
-#lentele 
+#table 
 coords_results_m <- 
   coords(dev_roc_m, "best", ret = c("threshold", "accuracy", "sensitivity", "specificity", "precision", "npv", "tpr", "fpr"), transpose = FALSE)
 coords_results_m
+
